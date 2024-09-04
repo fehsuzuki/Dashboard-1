@@ -6,3 +6,99 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
+
+:root {
+    --gold: #e3c464;
+    --grey: #edeef1;
+    --border-radius: 36px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 200px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Input search */
+.form-input {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.header-1 form .form-input input{
+    flex-grow: 1;
+    width: 300px;
+    padding: 0 16px;
+    height: 100%;
+    border: none;
+    background: var(--grey);
+    border-radius: 36px 0 0 36px;
+    outline: none;
+}
+
+.header-1 form .form-input button{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gold);
+    color: var(--light);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 0 36px 36px 0;
+    cursor: pointer;
+}
+
+.header-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dark/light mode button*/
+.toggle-button{
+    min-width: 50px;
+    height: 25px;
+    background: var(--grey);
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+}
+
+.toggle-button::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 21px;
+    background: var(--gold);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#toggle-button:checked+.toggle-button::before{
+    left: calc(100% - (25px - 4px) - 2px);
+}

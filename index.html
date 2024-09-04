@@ -23,10 +23,14 @@
             </form>
         </div>
         <div class="header-2">
-            <label for=""></label>
-            <i class='bx bx-bell' ></i>
+            <input type="checkbox" id="toggle-button" hidden>
+            <label for="toggle-button" class="toggle-button"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
         </div>
-    </header>
+    </div>
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -128,30 +132,95 @@
          <section class="recent-orders">
             <div>
                 <h2>
-                    <i class='bx bx-receipt'></i>
-                    Recent Orders
-                    <i class='bx bx-filter'></i>
-                    <i class='bx bx-search'></i>
+                    <div>
+                        <i class='bx bx-receipt'></i>
+                        Informações
+                    </div>
+                    <div>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
                 </h2>
              </div>
-             <div>
-                <h3>User</h3>
-                <h3>Order Date</h3>
-                <h3>Status</h3>
-             </div>
+             <table>
+                 <tr>User</tr>
+                 <tr>Order Date</tr>
+                 <tr>Status</tr>
+                 <tr>
+                    <td>
+                        <img src="assets/do-01.png" alt="">
+                        <p>Diário Oficial</p>
+                    </td>
+                    <td>
+                        04/09/2024
+                    </td>
+                    <td>
+                        <label for="">Finalizado</label>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <img src="assets/iconeSessoes.png" alt="">
+                        <p>Sessões</p>
+                    </td>
+                    <td>
+                        04/09/2024
+                    </td>
+                    <td>
+                        <label for="">Pendente</label>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <img src="assets/do-01.png" alt="">
+                        <p>Notícias</p>
+                    </td>
+                    <td>
+                        04/09/2024
+                    </td>
+                    <td>
+                        <label for="">Processando</label>
+                    </td>
+                 </tr>
+             </table>
          </section>
 
          <!-- Seção 2 -->
          <section class="reminders">
             <h2>
-                <i class='bx bx-note'></i>
-                Reminders 
-                <i class='bx bx-filter'></i>
-                <i class='bx bx-plus'></i>
+                <div>
+                    <i class='bx bx-note'></i>
+                    Lembretes 
+                </div>
+                <div>
+                    <i class='bx bx-filter'></i>
+                    <i class='bx bx-plus'></i>
+                </div>
             </h2>
-            
+            <div>
+                <label for="">
+                    <div>
+                        <i class="bx bx-check-circle"></i>
+                        <p>Iniciar reunião</p>
+                    </div>
+                    <i class="bx bx-dots-vertical-rounded"></i>
+                </label>
+                <label for="">
+                    <div>
+                        <i class="bx bx-check-circle"></i>
+                        <p>Analisar site</p>
+                    </div>
+                    <i class="bx bx-dots-vertical-rounded"></i>
+                </label>
+                <label for="">
+                    <div>
+                        <i class="bx bx-x-circle"></i>
+                        <p>Verificar produção</p>
+                    </div>
+                    <i class="bx bx-dots-vertical-rounded"></i>
+                </label>
+            </div>
          </section>
      </div>
-
 </body>
 </html>
