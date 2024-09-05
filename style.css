@@ -11,6 +11,8 @@
     --gold: #e3c464;
     --grey: #edeef1;
     --border-radius: 36px;
+    --color-black: #000;
+    --color-red: #ff0000;
 }
 
 body {
@@ -20,9 +22,8 @@ body {
 
 .header {
     display: flex;
-    margin-top: 15px;
-    margin-left: 200px;
-    padding: 10px;
+    margin: 10px 20px 5px 200px;
+    padding: 5px;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 .header i{
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -42,11 +43,10 @@ body {
 .form-input {
     display: flex;
     align-items: center;
-    height: 36px;
+    height: 30px;
 }
 
 .header-1 form .form-input input{
-    flex-grow: 1;
     width: 300px;
     padding: 0 16px;
     height: 100%;
@@ -101,4 +101,25 @@ body {
 
 #toggle-button:checked+.toggle-button::before{
     left: calc(100% - (25px - 4px) - 2px);
+}
+
+.notific {
+    position: relative;
+}
+
+.notific i {
+    color: var(--color-black);
+}
+
+.notific span {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    right: -10;
+    background-color: var(--color-red);
+    border-radius: 36px;
+    padding: 1px;
+    top: -6px;
+    right: -6px;
 }
